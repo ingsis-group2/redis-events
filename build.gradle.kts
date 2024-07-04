@@ -54,7 +54,7 @@ publishing {
         register<MavenPublication>("maven") {
             groupId = "org.gradle.redisevents"
             artifactId = "events"
-            version = "1.1.0-SNAPSHOT"
+            version = "1.1.1-SNAPSHOT"
             from(components["java"])
         }
 
