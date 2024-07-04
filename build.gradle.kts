@@ -43,7 +43,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/IngSis-Grupo1-2024/redis-events")
+            url = uri("https://maven.pkg.github.com/ingsis-group2/redis-events")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_AUTHOR")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")

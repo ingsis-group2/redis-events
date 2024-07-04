@@ -1,14 +1,7 @@
 package com.example.redisevents
 
 data class LintResult(
-    val userId: String,
-    val snippetId: String,
-    val result: LintResultStatus,
+    val snippetId: Long,
+    val reportList: List<String>,
+    val errorList: List<String>,
 )
-
-enum class LintResultStatus {
-    SUCCESS,
-    FAILURE,
-    PENDING,
-}
-

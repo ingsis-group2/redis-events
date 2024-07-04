@@ -1,20 +1,8 @@
 package com.example.redisevents
 
 data class LintRequest(
-    val content: String,
-    val language: String,
-    val version: String,
-    val rules: List<LintRulesInput>,
-    val input: List<String>,
-    val snippetId: String,
-    val userId: String,
+    val snippetId: Long,
+    val snippetContent: String,
+    val lintRules: Map<String, Any>,
 )
 
-data class LintRulesInput(
-    val name: String,
-    val isActive: Boolean,
-    val expression: Boolean,
-    val identifier: Boolean,
-    val literal: Boolean,
-    val format: String,
-)
